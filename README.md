@@ -1,17 +1,17 @@
 # LitmusChaos E2E
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flitmuschaos%2Flitmus-e2e.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flitmuschaos%2Flitmus-e2e?ref=badge_shield)
 
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flitmuschaos%2Flitmus-e2e.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flitmuschaos%2Flitmus-e2e?ref=badge_shield)
 
 **Latest Pipeline Status**
 
-| Generic                     |  OpenEBS                          | Litmus Portal               |
-|-----------------------------|-------------------------------------|-------------------------------|
-| [![pipeline status](https://gitlab.mayadata.io/litmuschaos/litmus-e2e/badges/generic/pipeline.svg)](https://gitlab.mayadata.io/litmuschaos/litmus-e2e/commits/generic)  |      [![pipeline status](https://gitlab.mayadata.io/litmuschaos/litmus-e2e/badges/openebs/pipeline.svg)](https://gitlab.mayadata.io/litmuschaos/litmus-e2e/commits/openebs)   |    [![pipeline status](https://gitlab.mayadata.io/litmuschaos/litmus-e2e/badges/litmus-portal/pipeline.svg)](https://gitlab.mayadata.io/litmuschaos/litmus-e2e/commits/litmus-portal) |
-
+| Generic                                                                                                                                                                | OpenEBS                                                                                                                                                                | Litmus Portal                                                                                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![pipeline status](https://gitlab.mayadata.io/litmuschaos/litmus-e2e/badges/generic/pipeline.svg)](https://gitlab.mayadata.io/litmuschaos/litmus-e2e/commits/generic) | [![pipeline status](https://gitlab.mayadata.io/litmuschaos/litmus-e2e/badges/openebs/pipeline.svg)](https://gitlab.mayadata.io/litmuschaos/litmus-e2e/commits/openebs) | [![pipeline status](https://gitlab.mayadata.io/litmuschaos/litmus-e2e/badges/litmus-portal/pipeline.svg)](https://gitlab.mayadata.io/litmuschaos/litmus-e2e/commits/litmus-portal) |
 
 This repository contains the Litmus E2E pipelines for testing the chaos and litmus components. It includes BDDs for all litmus and openebs experiments and tests for the litmus portal.
 
 ## Branch Details
+
 <table>
   <tr>
     <th>Branch</th>
@@ -40,6 +40,7 @@ Visit [LitmusChaos CI](https://litmuschaos.github.io/litmus-e2e) to get the pipe
 The Generic pipeline covers the test for litmus generic experiments which include some before and after chaos validation and performance checks for different litmus components.
 
 ### Different Stages:
+
 <table style="width:100%">
   <tr>
     <th>Stages</th>
@@ -81,9 +82,11 @@ The Generic pipeline covers the test for litmus generic experiments which includ
 </table>
 
 # OpenEBS E2E Pipeline
+
 It contains the openebs e2e BDDs for OpenEBS experiments. A stateful application (percona) deployed using cstor (OpenEBS Storage class). The chaos is performed on the different OpenEBS components using the same application. In the end, The application, litmus, and OpenEBS are removed successfully.
 
 ### Different Stages:
+
 <table style="width:100%">
   <tr>
     <th>Stages</th>
@@ -124,6 +127,7 @@ It contains the openebs e2e BDDs for OpenEBS experiments. A stateful application
 It contains litmus-portal BDD tests using Cypress. Currently, it contains Cypress E2E tests for functionalities like login, Welcome Modal, User management and Browse Schedules.
 
 ### Different Stages:
+
 <table style="width:100%">
   <tr>
     <th>Stages</th>
@@ -160,5 +164,5 @@ It contains litmus-portal BDD tests using Cypress. Currently, it contains Cypres
 </table>
 
 ## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flitmuschaos%2Flitmus-e2e.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Flitmuschaos%2Flitmus-e2e?ref=badge_large)
 
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flitmuschaos%2Flitmus-e2e.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Flitmuschaos%2Flitmus-e2e?ref=badge_large)
