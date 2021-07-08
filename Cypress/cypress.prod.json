@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://localhost:3001/",
+  "baseUrl": "http://172.18.0.2:31368/",
   "experimentalFetchPolyfill": true,
   "viewportWidth": 3840,
   "viewportHeight": 2160,

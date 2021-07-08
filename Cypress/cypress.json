@@ -1,14 +1,14 @@
 {
-  "baseUrl": "http://localhost:3001",
+  "baseUrl": "https://github.com/",
   "experimentalFetchPolyfill": true,
   "viewportWidth": 3840,
   "viewportHeight": 2160,
   "defaultCommandTimeout": 10000,
   "chromeWebSecurity": false,
   "video": false,
-  "experimentalNetworkStubbing":true,
+  "experimentalNetworkStubbing": true,
   "env": {
-    "authURL" : "http://localhost:3000",
-    "apiURL" : "http://localhost:8080"
+    "authURL": "http://localhost:3000",
+    "apiURL": "http://localhost:8080"
   }
 }

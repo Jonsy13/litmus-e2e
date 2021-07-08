@@ -22,5 +22,9 @@
     "cypress": "^7.3.0",
     "cypress-file-upload": "^5.0.7",
     "cypress-wait-until": "^1.7.1"
+  },
+  "dependencies": {
+    "@kubernetes/client-node": "^0.15.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2"
   }
 }

@@ -12,10 +12,28 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
+const k8s = require("../../kubeclient");
+
 /**
  * @type {Cypress.PluginConfig}
  */
+// module.exports = (on, config) => {
+//   // `on` is used to hook into various events Cypress emits
+//   // `config` is the resolved Cypress config
+// };
+
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-}
+  on("task", {
+    // destructure the argument into the individual fields
+    listPod(namespace) {
+      return k8s.listPods(namespace).then((res) => {
+        return res;
+      });
+    },
+    listDeployment(namespace) {
+      return k8s.listDeployments(namespace).then((res) => {
+        return res;
+      });
+    },
+  });
+};
